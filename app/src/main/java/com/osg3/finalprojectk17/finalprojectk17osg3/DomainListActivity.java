@@ -13,6 +13,8 @@ import com.osg3.finalprojectk17.finalprojectk17osg3.adapter.DomainAdapter;
 import com.osg3.finalprojectk17.finalprojectk17osg3.api.APIClient;
 import com.osg3.finalprojectk17.finalprojectk17osg3.model.Domain;
 import com.osg3.finalprojectk17.finalprojectk17osg3.model.DomainSearch;
+import com.osg3.finalprojectk17.finalprojectk17osg3.adapter.DomainAdapter;
+import com.osg3.finalprojectk17.finalprojectk17osg3.model.Domain;
 import com.osg3.finalprojectk17.finalprojectk17osg3.utils.RecyclerItemClickListener;
 
 import java.util.ArrayList;
