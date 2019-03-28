@@ -48,27 +48,6 @@ public class DomainAdapter extends RecyclerView.Adapter<DomainAdapter.DomainView
 
 		String domainName = domainList.get(i).domain;
 		domainViewHolder.tvDomain.setText(domainName);
-
-		domainViewHolder.cvDomain.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				String expiryDate = domainList.get(i).expiryDate;
-				String createDate = domainList.get(i).createDate;
-				String updateDate = domainList.get(i).updateDate;
-				Boolean isDead = domainList.get(i).isDead;
-				List a = domainList.get(i).a;
-				List tXT= domainList.get(i).tXT;
-				String country= domainList.get(i).country;
-				List nS= domainList.get(i).nS;
-				Boolean resolvable= domainList.get(i).resolvable;
-
-				Domain domain = new Domain(domainName, expiryDate,createDate,updateDate,isDead,a,tXT,country,nS,
-						resolvable);
-				Intent goDetail = new Intent(context, DomainDetailActivity.class);
-				goDetail.putExtra("DomainDetail", domain);
-
-			}
-		});
 	}
 
 	@Override
