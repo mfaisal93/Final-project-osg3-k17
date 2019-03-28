@@ -62,20 +62,6 @@ public class Domain implements Parcelable {
 	public Domain() {
 	}
 
-	public Domain(String domain, String expiryDate, String createDate, String updateDate, Boolean isDead, List a,
-	              List tXT, String country, List nS, Boolean resolvable) {
-		this.domain = domain;
-		this.expiryDate = expiryDate;
-		this.createDate = createDate;
-		this.updateDate = updateDate;
-		this.isDead = isDead;
-		this.a = a;
-		this.tXT = tXT;
-		this.country = country;
-		this.nS = nS;
-		this.resolvable = resolvable;
-	}
-
 	protected Domain(Parcel in) {
 		this.domain = in.readString();
 		this.expiryDate = in.readString();

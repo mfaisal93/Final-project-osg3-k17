@@ -2,11 +2,11 @@ package com.osg3.finalprojectk17.finalprojectk17osg3.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import android.widget.TextView;
 import com.osg3.finalprojectk17.finalprojectk17osg3.R;
 import com.osg3.finalprojectk17.finalprojectk17osg3.model.Domain;
@@ -56,13 +56,11 @@ public class DomainAdapter extends RecyclerView.Adapter<DomainAdapter.DomainView
 	class DomainViewHolder extends RecyclerView.ViewHolder {
 
 		TextView tvDomain;
-		CardView cvDomain;
 
 		DomainViewHolder(@NonNull View itemView) {
 			super(itemView);
 
 			tvDomain = itemView.findViewById(R.id.tv_domain);
-			cvDomain = itemView.findViewById(R.id.cv_domain);
 		}
 	}
 }
