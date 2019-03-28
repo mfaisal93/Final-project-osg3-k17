@@ -1,7 +1,6 @@
 package com.osg3.finalprojectk17.finalprojectk17osg3.adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -10,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.TextView;
-import com.osg3.finalprojectk17.finalprojectk17osg3.DomainDetailActivity;
 import com.osg3.finalprojectk17.finalprojectk17osg3.R;
 import com.osg3.finalprojectk17.finalprojectk17osg3.model.Domain;
 
@@ -48,27 +46,6 @@ public class DomainAdapter extends RecyclerView.Adapter<DomainAdapter.DomainView
 
 		String domainName = domainList.get(i).domain;
 		domainViewHolder.tvDomain.setText(domainName);
-
-		domainViewHolder.cvDomain.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				String expiryDate = domainList.get(i).expiryDate;
-				String createDate = domainList.get(i).createDate;
-				String updateDate = domainList.get(i).updateDate;
-				Boolean isDead = domainList.get(i).isDead;
-				List a = domainList.get(i).a;
-				List tXT= domainList.get(i).tXT;
-				String country= domainList.get(i).country;
-				List nS= domainList.get(i).nS;
-				Boolean resolvable= domainList.get(i).resolvable;
-
-				Domain domain = new Domain(domainName, expiryDate,createDate,updateDate,isDead,a,tXT,country,nS,
-						resolvable);
-				Intent goDetail = new Intent(context, DomainDetailActivity.class);
-				goDetail.putExtra("DomainDetail", domain);
-
-			}
-		});
 	}
 
 	@Override
