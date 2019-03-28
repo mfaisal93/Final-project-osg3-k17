@@ -32,6 +32,7 @@ public class DomainListActivity extends AppCompatActivity {
 	}
 
 	private void setUpDomainList() {
+		rcvDomain = findViewById(R.id.rcv_domain);
 		linearLayoutManager = new LinearLayoutManager(DomainListActivity.this);
 		rcvDomain.setLayoutManager(linearLayoutManager);
 		domainAdapter = new DomainAdapter(DomainListActivity.this, getDomainData());
