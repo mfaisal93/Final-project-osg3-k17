@@ -4,7 +4,6 @@ import android.content.Context;
 import com.osg3.finalprojectk17.finalprojectk17osg3.base.BaseViewModel;
 import com.osg3.finalprojectk17.finalprojectk17osg3.data.DomainDataSource;
 import com.osg3.finalprojectk17.finalprojectk17osg3.data.DomainRepository;
-import com.osg3.finalprojectk17.finalprojectk17osg3.model.Domain;
 import com.osg3.finalprojectk17.finalprojectk17osg3.model.DomainSearch;
 import com.osg3.finalprojectk17.finalprojectk17osg3.navigator.DomainNavigator;
 
@@ -24,7 +23,7 @@ public class DomainViewModel extends BaseViewModel {
 		this.navigator = navigator;
 	}
 
-	public void getListDomain() {
+	public void getListDomain(String keyword) {
 		repository.getListDomain(new DomainDataSource.GetDomainCallback() {
 			@Override
 			public void onDomainLoaded(DomainSearch domain) {
@@ -35,6 +34,6 @@ public class DomainViewModel extends BaseViewModel {
 			public void onDataNotAvailable(String message) {
 				navigator.errorLoadListDomain(message);
 			}
-		});
+		}, keyword);
 	}
 }
