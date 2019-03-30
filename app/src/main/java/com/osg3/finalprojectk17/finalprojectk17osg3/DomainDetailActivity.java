@@ -14,6 +14,7 @@ public class DomainDetailActivity extends AppCompatActivity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_domain_detail);
 
+
 		tv_domain = (TextView) findViewById(R.id.tv_domain);
 		tv_expiryDate = (TextView) findViewById(R.id.tv_expiryDate);
 		tv_createDate = (TextView) findViewById(R.id.tv_createDate);
