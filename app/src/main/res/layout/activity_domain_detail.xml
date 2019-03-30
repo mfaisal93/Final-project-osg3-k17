@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".DomainDetailActivity">
+
+    <TextView
+        android:id="@+id/tv_domainLabel"
+        android:textSize="18dp"
+        android:text="Domain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_domain"
+        android:textSize="20dp"
+        android:text="facebook.com"
+        android:textColor="@color/hitam"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tv_domainLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_expiryDateLabel"
+        android:textSize="18dp"
+        android:text="Tanggal Kadaluarsa"
+        android:layout_below="@+id/tv_domain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_expiryDate"
+        android:textSize="20dp"
+        android:text="2019"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/hitam"
+        android:layout_below="@+id/tv_expiryDateLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_createDateLabel"
+        android:textSize="18dp"
+        android:text="Tanggal Dibuat"
+        android:layout_below="@+id/tv_expiryDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_createDate"
+        android:textSize="20dp"
+        android:text="2019"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/hitam"
+        android:layout_below="@+id/tv_createDateLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_updatedateLabel"
+        android:textSize="18dp"
+        android:text="Tanggal Diperbarui"
+        android:layout_below="@+id/tv_createDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_updatedate"
+        android:textSize="20dp"
+        android:text="2019"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/hitam"
+        android:layout_below="@+id/tv_updatedateLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_isDeadLabel"
+        android:textSize="18dp"
+        android:text="Status"
+        android:layout_below="@+id/tv_updatedate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_isDead"
+        android:textSize="20dp"
+        android:text="Aktif"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/hitam"
+        android:layout_below="@+id/tv_isDeadLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_aLabel"
+        android:textSize="18dp"
+        android:text="A"
+        android:layout_below="@+id/tv_isDead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_a"
+        android:textSize="20dp"
+        android:text="217.160.0.95"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/hitam"
+        android:layout_below="@+id/tv_aLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_txtLabel"
+        android:textSize="18dp"
+        android:text="TXT"
+        android:layout_below="@+id/tv_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_txt"
+        android:textSize="20dp"
+        android:text="txt"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/hitam"
+        android:layout_below="@+id/tv_txtLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_countryLabel"
+        android:textSize="18dp"
+        android:text="Negara"
+        android:layout_below="@+id/tv_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_country"
+        android:textSize="20dp"
+        android:text="2019"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/hitam"
+        android:layout_below="@+id/tv_countryLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_nsLabel"
+        android:textSize="18dp"
+        android:text="ns"
+        android:layout_below="@+id/tv_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_ns"
+        android:textSize="20dp"
+        android:text="ns1106.ui-dns.com"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/hitam"
+        android:layout_below="@+id/tv_nsLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_resolvableLabel"
+        android:textSize="18dp"
+        android:text="Resolvable"
+        android:layout_below="@+id/tv_ns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_resolvable"
+        android:textSize="20dp"
+        android:text="Ya"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/hitam"
+        android:layout_below="@+id/tv_resolvableLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
