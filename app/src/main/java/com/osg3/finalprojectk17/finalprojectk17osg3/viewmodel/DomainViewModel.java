@@ -27,7 +27,7 @@ public class DomainViewModel extends BaseViewModel {
 		repository.getListDomain(new DomainDataSource.GetDomainCallback() {
 			@Override
 			public void onDomainLoaded(DomainSearch domain) {
-				navigator.loadListDomain(domain.domains);
+				navigator.loadListDomain(domain.getDomains());
 			}
 
 			@Override

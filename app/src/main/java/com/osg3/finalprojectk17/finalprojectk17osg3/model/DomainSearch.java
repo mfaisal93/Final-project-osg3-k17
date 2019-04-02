@@ -1,19 +1,23 @@
 package com.osg3.finalprojectk17.finalprojectk17osg3.model;
 
+import android.os.Parcel;
+import android.os.Parcelable;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-public class DomainSearch {
+public class DomainSearch  {
 
-	@SerializedName("total")
-	@Expose
-	public Integer total;
-	@SerializedName("time")
-	@Expose
-	public Integer time;
 	@SerializedName("domains")
 	@Expose
-	public List<Domain> domains = null;
+	List<Domain> domains;
+
+	public List<Domain> getDomains() {
+		return domains;
+	}
+
+	public DomainSearch(List<Domain> domains) {
+		this.domains = domains;
+	}
 }

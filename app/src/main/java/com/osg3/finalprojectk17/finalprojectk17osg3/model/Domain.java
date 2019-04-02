@@ -45,6 +45,22 @@ public class Domain implements Parcelable {
 		return 0;
 	}
 
+
+	public Domain(String domain, String expiryDate, String createDate, String updateDate, Boolean isDead, List<String> a,
+	              List<String> tXT, String country, List nS, Boolean resolvable) {
+		this.domain = domain;
+		this.expiryDate = expiryDate;
+		this.createDate = createDate;
+		this.updateDate = updateDate;
+		this.isDead = isDead;
+		this.a = a;
+		this.tXT = tXT;
+		this.country = country;
+		this.nS = nS;
+		this.resolvable = resolvable;
+	}
+
+
 	@Override
 	public void writeToParcel(Parcel dest, int flags) {
 		dest.writeString(this.domain);
@@ -57,9 +73,6 @@ public class Domain implements Parcelable {
 		dest.writeString(this.country);
 		dest.writeStringList(this.nS);
 		dest.writeValue(this.resolvable);
-	}
-
-	public Domain() {
 	}
 
 	protected Domain(Parcel in) {
