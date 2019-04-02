@@ -45,12 +45,12 @@ public class DomainDetailActivity extends AppCompatActivity {
 		tv_updatedate.setText(domain.updateDate);
 		tv_isDead.setText(isDead);
 		for (int i = 0; i < domain.a.size(); i++)
-			tv_a.setText(tv_a.getText() + "\n" + domain.a.get(i));
+			tv_a.setText(String.format("%s\n%s", tv_a.getText(), domain.a.get(i)));
 		for (int i = 0; i < domain.tXT.size(); i++)
-			tv_txt.setText(tv_txt.getText() + "\n" + domain.tXT.get(i));
+			tv_txt.setText(String.format("%s\n%s", tv_txt.getText(), domain.tXT.get(i)));
 		tv_country.setText(domain.country);
 		for (int i = 0; i < domain.a.size(); i++)
-			tv_ns.setText(tv_ns.getText() + "\n" + domain.nS.get(i));
+			tv_ns.setText(String.format("%s\n%s", tv_ns.getText(), domain.nS.get(i)));
 		tv_resolvable.setText(resolvable);
 	}
 }
